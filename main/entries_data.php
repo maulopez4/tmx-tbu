@@ -34,16 +34,13 @@ include("functions.php");
     <span>Brand : </span><input type='text' name='workorder_brand' id='brand' disabled/><br>
     <!--- Product Line --->
     <span>Product Line : </span><input type="text" name="workorder_product_line" id="product_line" disabled /><br> 
-    <br>
     <!--- Mold --->
     <span>Mold : </span><input type="text" name="workorder_mold" id="mold" disabled/><br> 
-    <br>
     <!--- Serial --->
     <span>Mold Serial : </span><input type="text" name="workorder_mold_serial" id="mold_serial" disabled/><br> 
-    <br>
     <!--- Paint Code --->
-    <span>Paint Code : </span><input type="text" name="workorder_paintcode" id="paintcode" disabled/><br> 
-    <br>
+    <span>Paint Code : </span><input type="text" name="workorder_paintcode" id="paintcode" disabled/><br>
+    <!--- Workorder Data Comments --->
     <span>Comments : </span><textarea style="height:60px;width:300px;" name="workorder_comments" id="comments01"></textarea><br>
 <!--------------------------------------------------------------------------------------------------------------->
     
