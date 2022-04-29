@@ -172,7 +172,7 @@ include("functions.php");
 			<td><input type="hidden" name="workorder_product_line" id="product_line" value="<?php echo $e;?>"><?php echo $e;?></td>
 			<td><input type="hidden" name="workorder_mold" id="mold" value="<?php echo $f;?>"><?php echo $f;?> </td>
 			<td><input type="hidden" name="workorder_mold_serial" id="mold_serial" value="<?php echo $g;?>"><?php echo $g;?> </td>
-			<td><input type="hidden" name="workorder_workstation" id="workstation" value="<?php echo $h;?>" /><?php echo $h;?> - <?php echo $paint["paintcode_description"];?></td>
+			<td><input type="hidden" name="workorder_workstation" id="workstation" value="<?php echo $h;?>" /><?php echo $h;?></td>
 </tr>
 	</tbody>
 </table>

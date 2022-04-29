@@ -106,7 +106,7 @@ if(isset($_POST['ClearButton'])){ //check if form was submitted
 						<option value="<?php echo $workstation; ?>" selected><?php echo $workstation; ?></option>
 						<option value="CP1,CP2,CP3,CP4,CP5,CP6,CP7,MOSH,SPOT">All Workstations</option>    
 						<?php foreach($wo_ws as $ws): ?>
-							<option value="<?php echo $ws["workstation_code"]; ?>"> <?php echo $ws["workstation_code"]; ?></option>
+							<option value="<?php echo $ws["workstation_code"]; ?>"> <?php echo $ws["workstation_code"]; ?>- <?php echo $ws["workstation_description"];?></option>
 						<?php endforeach; ?>
 					</select>
 				</td>
@@ -115,7 +115,7 @@ if(isset($_POST['ClearButton'])){ //check if form was submitted
 					<input type="text" id="fromDate" name="fromDate" value="<?php echo $fromDate; ?>">
 				</td>
 				<td width="22%">	
-					<span>Till : </span><br>
+					<span>To : </span><br>
 					<input type="text" id="tillDate" name="tillDate" value="<?php echo $tillDate; ?>">
 				</td>
 				<td width="33%" style="text-align: center; vertical-align: middle;">

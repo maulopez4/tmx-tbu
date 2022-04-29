@@ -14,7 +14,7 @@ include("functions.php");
 <div id="ac" style="width:500px">
     <!--- Workstation --->    
     <span>Workstation : </span>
-    <select name="workorder_workstation" id="workstation">  
+    <select name="workorder_workstation" id="workstation" required>  
     <?php
             $query="SELECT * FROM workstations";
             $sql=$db->prepare($query);
@@ -27,22 +27,22 @@ include("functions.php");
             <?php endforeach; ?>
     </select><br>
      <!--- Workorder Number --->
-    <span>Workorder Number : </span><input type="text" name="workorder_number" id="number" placeholder="Enter Workorder Number" onkeyup="fetch_workorder(this.value);"/><br> 
+    <span>Workorder Number : </span><input type="text" name="workorder_number" id="number" placeholder="Enter Workorder Number" onchange="fetch_workorder(this.value);"/><br> 
      <!--- Inspected By --->
-    <span>Inspected By : </span><input type="text" name="workorder_inspectedby" id="inspectedby" value="<?php echo $_SESSION['SESS_USER_NAME'];?>" /><br>
+    <span>Inspected By : </span><input type="hidden" name="workorder_inspectedby" id="inspectedby" value="<?php echo $_SESSION['SESS_USER_NAME'];?>" /><input type="text" value="<?php echo $_SESSION['SESS_USER_NAME'];?>" disabled /><br>
     <!--- Brand --->
-    <span>Brand : </span><input type='text' name='workorder_brand' id='brand' disabled /><br>
+    <span>Brand : </span><input type='text' name='workorder_brand' id='brand' disabled/><br>
     <!--- Product Line --->
-    <span>Product Line : </span><input type="text" name="workorder_product_line" id="product_line" /><br> 
+    <span>Product Line : </span><input type="text" name="workorder_product_line" id="product_line" disabled /><br> 
     <br>
     <!--- Mold --->
-    <span>Mold : </span><input type="text" name="workorder_mold" id="mold" value="" /><br> 
+    <span>Mold : </span><input type="text" name="workorder_mold" id="mold" disabled/><br> 
     <br>
     <!--- Serial --->
-    <span>Mold Serial : </span><input type="text" name="workorder_mold_serial" id="mold_serial" value="" /><br> 
+    <span>Mold Serial : </span><input type="text" name="workorder_mold_serial" id="mold_serial" disabled/><br> 
     <br>
     <!--- Paint Code --->
-    <span>Paint Code : </span><input type="text" name="workorder_paintcode" id="paintcode" value="" /><br> 
+    <span>Paint Code : </span><input type="text" name="workorder_paintcode" id="paintcode" disabled/><br> 
     <br>
     <span>Comments : </span><textarea style="height:60px;width:300px;" name="workorder_comments" id="comments01"></textarea><br>
 <!--------------------------------------------------------------------------------------------------------------->

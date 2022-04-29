@@ -42,26 +42,21 @@ function fetch_workorder(val)
     get_workorder:val
     },
  success: function (response) {   
-    var wo=(Object.values(response));
+            var wo=(Object.values(response));
+            //alert(wo);
             var wo_brand = (wo[0]);
             var wo_product_line = (wo[1]);
             var wo_mold = (wo[2]);
             var wo_mold_serial = (wo[3]);
             var wo_paint_description = (wo[4]);
-                       
-            //alert(wo_brand);
-            //alert(wo_product_line);
-            //alert(wo_mold);
-            //alert(wo_mold_serial);
-            //alert(wo_paint_description);
 
-
+            alert(wo_brand);
+            alert(wo_product_line);
+            alert(wo_mold);
              /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            $("#brand").replaceWith("<input type='hidden' name='workorder_brand' id='brand' value='" + wo_brand + "'/><input type='text' placeholder='"+ wo_brand + "' disabled />");
-            $("#product_line").replaceWith("<input type='hidden' name='workorder_product_line' id='product_line' value='" + wo_product_line + "'/><input type='text' placeholder='"+ wo_product_line + "' disabled />");
-            $("#mold").replaceWith("<input type='hidden' name='workorder_mold' id='mold' value='" + wo_mold + "'/><input type='text' placeholder='"+ wo_mold + "' disabled />");
-            $("#mold_serial").replaceWith("<input type='hidden' name='workorder_mold_serial' id='mold_serial' value='" + wo_mold_serial + "'/><input type='text' placeholder='"+ wo_mold_serial + "' disabled />");
-            $("#paintcode").replaceWith("<input type='hidden' name='workorder_paintcode' id='paintcode' value='" + wo_paint_description + "'/><input type='text' placeholder='"+ wo_paint_description + "' disabled />");
+            //var brand_ouput = "<input type='text' name='workorder_brand' id='brand' value="+ wo_brand" disabled />";
+            //alert(brand_ouput);
+            //$("#brand").replaceWith(brand_ouput);
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
             }
  });
