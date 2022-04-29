@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.22",
+        "ezyang/htmlpurifier": "^4.14",
+        "composer/semver": "^3.3"
+    }
+}
